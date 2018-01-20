@@ -9,11 +9,11 @@ call_user_func(
             'PingReceive.PingReceive',
             'Information',
             [
-                
+                'Order' => 'list, show'
             ],
             // non-cacheable actions
             [
-                
+                'Order' => 'list, show'
             ]
         );
 

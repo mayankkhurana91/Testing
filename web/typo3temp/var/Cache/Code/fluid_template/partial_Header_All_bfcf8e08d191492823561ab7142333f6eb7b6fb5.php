@@ -20,14 +20,6 @@ $renderingContext->getViewHelperResolver()->addNamespaces(array (
     0 => 'TYPO3Fluid\\Fluid\\ViewHelpers',
     1 => 'TYPO3\\CMS\\Fluid\\ViewHelpers',
   ),
-  'formvh' => 
-  array (
-    0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
-  ),
-  'bk2k' => 
-  array (
-    0 => 'BK2K\\BootstrapPackage\\ViewHelpers',
-  ),
 ));
 }
 

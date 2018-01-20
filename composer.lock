@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9594da78697b7dd86cceee031255d1c5",
+    "content-hash": "f05f851f457cca89017b217e856d64bc",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -955,6 +955,26 @@
             "time": "2016-06-19T18:08:43+00:00"
         },
         {
+            "name": "pingreceive/ping-receive",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mayankkhurana91/ping-receive.git",
+                "reference": "168c1073e128342cc3882aabe50ae4404e7579d2"
+            },
+            "require": {
+                "pingreceive/ping-receive": "dev-master",
+                "typo3/cms-core": "^8.7.1"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "PingReceive\\PingReceive\\": "Classes"
+                }
+            },
+            "time": "2018-01-16T13:51:22+00:00"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.0.1",
             "source": {
@@ -1582,16 +1602,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "v8.7.8",
+            "version": "v8.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "90f1c05c306f4633d7561cb60534b99e394f9e22"
+                "reference": "50b5da136efc62be6f00d9d087648e7a523cc7cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/90f1c05c306f4633d7561cb60534b99e394f9e22",
-                "reference": "90f1c05c306f4633d7561cb60534b99e394f9e22",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/50b5da136efc62be6f00d9d087648e7a523cc7cf",
+                "reference": "50b5da136efc62be6f00d9d087648e7a523cc7cf",
                 "shasum": ""
             },
             "require": {
@@ -1608,10 +1628,10 @@
                 "psr/http-message": "~1.0",
                 "psr/log": "~1.0.0",
                 "swiftmailer/swiftmailer": "~5.4.5",
-                "symfony/console": "^2.7 || ^3.0",
-                "symfony/finder": "^2.7 || ^3.0",
+                "symfony/console": "^2.7 || ^3.0 || ^4.0",
+                "symfony/finder": "^2.7 || ^3.0 || ^4.0",
                 "symfony/polyfill-mbstring": "^1.2",
-                "symfony/yaml": "^2.7 || ^3.0",
+                "symfony/yaml": "^2.7 || ^3.0 || ^4.0",
                 "typo3/class-alias-loader": "^1.0",
                 "typo3/cms-cli": "^1.0.2",
                 "typo3/cms-composer-installers": "^1.2.8",
@@ -1675,7 +1695,7 @@
                 "fiunchinho/phpunit-randomizer": "~3.0.0",
                 "friendsofphp/php-cs-fixer": "^2.0",
                 "typo3/cms-styleguide": "~8.0.8",
-                "typo3/testing-framework": "~1.1.0"
+                "typo3/testing-framework": "~1.2.2"
             },
             "suggest": {
                 "ext-fileinfo": "Used for proper file type detection in the file abstraction layer",
@@ -1780,7 +1800,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2017-10-10T16:08:44+00:00"
+            "time": "2017-12-12T16:09:50+00:00"
         },
         {
             "name": "typo3/cms-cli",
@@ -1988,6 +2008,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "pingreceive/ping-receive": 20,
         "friendsoftypo3/extension-builder": 20
     },
     "prefer-stable": false,
